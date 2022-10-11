@@ -1,0 +1,25 @@
+Source: libsub-exporter-formethods-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libnamespace-autoclean-perl <!nocheck>,
+                     libsub-exporter-perl <!nocheck>,
+                     perl
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libsub-exporter-formethods-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libsub-exporter-formethods-perl.git
+Homepage: https://metacpan.org/release/Sub-Exporter-ForMethods
+Rules-Requires-Root: no
+
+Package: libsub-exporter-formethods-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libsub-exporter-perl
+Description: Sub::Exporter extension for handling methods
+ Sub::Exporter::ForMethods is a Perl module that allows methods to be easily
+ imported into your namespace. It also wraps method calls to a transformation
+ routine, which inserts a named frame into stack traces to aid in debugging.
